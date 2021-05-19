@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Electronics boy!</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="javascript/javascript.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999"> 
+        <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+            </button> 
+            <a class="navbar-brand" href="#" id="websitename">E-boy</a> 
+        </div> 
+        <div class="collapse navbar-collapse" id="myNavbar"> 
+            <ul class="nav navbar-nav"> 
+                <li><a href="#projects">All Projz</a></li> 
+                <li><a href="#javaprojects">Java Projz</a></li> 
+                <li><a href="#htmlprojects">HTML Projz</a></li> 
+            </ul> 
+        </div> 
+    </nav>
+
+    <section class="intro">
+        <center>
+            <img src="icon.png" width="100" height="100">
+            <h1>Welcome to Electronics boy!</h1>
+            <br>
+            <h3>
+                Hello, everyone!
+                <br>
+                Welcome to Electronics boy!
+                <br>
+                I'm a java programmer and a youtuber. I have a youtube channel called <a href="https://www.youtube.com/channel/UCyx-dP0Kf2AHLm0eDj0YrZw">Electronics Boy</a>.
+                <br>
+                I started my channel on 10th of April 2020, and made this website on 20th December 2020.
+                <br><br>
+                There are some <a href="#projects">projects</a> I made in java in section "<a href="#javaprojects">Java Projects</a>" and html projects in "<a href="#htmlprojects">HTML Projects</a>",<br> feel free to check them out!
+            </h3>
+        </center>
+    </section>
+
+<div class="container">
+    <section id="projects">
+        <h2>Click On The projects To Explore</h2> 
+        <section id="javaprojects">
+            <h4>The following are made in java, click to get more information about them.</h4>
+            <div id="myCarousel" class="carousel slide"> 
+                <div class="carousel-inner"> 
+                    <div class="item active"> 
+                        <center> 
+                                <img src="gameengine.png" class="img-responsive" onclick="javaP1Clicked()"> 
+                                <div class="carousel-content"> 
+                                <p>Game Engine</p>
+                                </div> 
+                        </center> 
+                    </div>
+
+                <div class="item">
+                    <center> 
+                        <img src="https://miro.medium.com/max/1024/1*Syzc_BbO0QHTx74NLHcpiQ.png" class="img-responsive" onclick="javaP2Clicked()""> 
+                        <div class="carousel-content"> 
+                            <p>Tic Tac Toe Game(incomplete)</p> 
+                        </div> 
+                    </center> 
+                </div> 
+
+                <div class="item">
+                    <center> 
+                        <img src="https://itsallbinary.com/wp-content/uploads/2019/12/Netty-Chat-Server-Client.jpg" class="img-responsive" onclick="javaP3Clicked()""> 
+                        <div class="carousel-content"> 
+                            <p>Chat App(almost complete)</p> 
+                        </div> 
+                    </center> 
+                </div> 
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a> 
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
+                <span class="glyphicon glyphicon-chevron-right"></span> 
+            </a> 
+        </section>
+
+<br>
+<br>
+<br>
+
+        <!----HTML---->
+        <section id="htmlprojects">
+            <h4>The following are made in HTML, click to get more information about them.</h4>
+            <div id="myCarousel2" class="carousel slide"> 
+                <div class="carousel-inner"> 
+                    <div class="item active"> 
+                        <center> 
+                                <img src="" class="img-responsive" onclick=""> 
+                                <div class="carousel-content"> 
+                                     <p>Comming Soon!</p>
+                                </div> 
+                        </center> 
+                    </div>
+            <a class="left carousel-control" href="#myCarousel2" data-slide="prev"> 
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a> 
+
+            <a class="right carousel-control" href="#myCarousel2" data-slide="next"> 
+                <span class="glyphicon glyphicon-chevron-right"></span> 
+            </a> 
+        </section>
+    </section>
+
+    <br>
+    <br>
+
+    <div class="page-header" id="achievements">
+        <h2 class="text-capitalize">MY hobbies</h2>
+    </div> 
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1"> 
+        Coding
+        <i class="fa fa-sort-desc"></i> 
+    </div> 
+    <div id="school_achievement1" class="collapse"> 
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID"> 
+            <img src="https://raw.githubusercontent.com/ElectronicsBoy/electronicsboy.github.io/main/commons/res/my_favorite/Hobby1.png" class="img-responsive img-thumbnail"> 
+        </div> 
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text"> 
+            <h5 class="text-success text-left text-capitalize">Coding!</h5> 
+            <p>This is one of my three hobbies, i started coding after the covid lockdown. More Text Soon!</p> 
+        </div> 
+    </div>
+
+    <br>
+
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2"> 
+        Making small Electronics
+        <i class="fa fa-sort-desc"></i> 
+    </div> 
+    <div id="school_achievement2" class="collapse"> 
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID"> 
+            <img src="https://raw.githubusercontent.com/ElectronicsBoy/electronicsboy.github.io/main/commons/res/my_favorite/Hobby1.png" class="img-responsive img-thumbnail"> 
+        </div> 
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text"> 
+            <h5 class="text-success text-left text-capitalize">Electronics!</h5> 
+            <p>This is second of my three hobbies, i started learning electronics at the age of 2. More Text Soon!</p> 
+        </div> 
+    </div>
+
+    <br>
+    <br>
+ </div>
+</body>
+</html>
