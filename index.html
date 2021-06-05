@@ -9,10 +9,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="javascript.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 
 </head>
 
@@ -27,13 +31,13 @@
             <span class="icon-bar"></span> 
             <span class="icon-bar"></span> 
         </button> 
-        <a class="navbar-brand" href="#" id="websitename">E-boy</a> 
+        <a class="navbar-brand" href="#" id="websitename">Electronics Boy</a> 
     </div> 
     <div class="collapse navbar-collapse" id="myNavbar"> 
         <ul class="nav navbar-nav"> 
-            <li><a href="#projects">All Projz</a></li> 
-            <li><a href="#javaprojects">Java Projz</a></li> 
-            <li><a href="#achievements">HTML Projz</a></li> 
+            <li><a href="#javaprojects">Java Projects</a></li> 
+            <li><a href="#achievements">My Hobbies</a></li> 
+            <li> <a href="#contact-txt">Contact</a> </li>
         </ul> 
     </div> 
 </nav>
@@ -54,39 +58,25 @@
                 <br>
                 I started my channel on 10th of April 2020, and made this website on 20th December 2020.
                 <br><br>
-                There are some <a href="#projects">projects</a> I made in java in section "<a href="#javaprojects">Java Projects</a>" and html projects in "<a href="#htmlprojects">HTML Projects</a>",<br> feel free to check them out!
+                There are some projects I made in java in section "<a href="#javaprojects">Java Projects</a>",<br> feel free to check them out!
             </h3>
         </center>
     </section>
-
-
-<br> <br><br>
-
-    
-        <h2>Click On The projects To Explore</h2> 
-        <section id="javaprojects">
-            <h4>The following are made in java, click to get more information about them.</h4>
-            <div id="myCarousel" class="carousel slide"> 
-                <div class="carousel-inner"> 
-                    <div class="item active"> 
-                        <center> 
-                                <img src="gameengine.PNG" class="img-responsive" onclick="javaP1Clicked()"> 
-                                <div class="carousel-content"> 
-                                <p>Game Engine</p>
-                                </div> 
-                        </center> 
-                    </div>
-
-                <div class="item">
+    <br> <br><br>
+    <h2>Click On The projects To Explore</h2> 
+    <section id="javaprojects">
+        <h4>The following are made in java, click to get more information about them.</h4>
+        <div id="myCarousel" class="carousel slide"> 
+            <div class="carousel-inner"> 
+                <div class="item active col-lg-12 col-md-12 col-sm-12 col-xs-12" data-toggle="modal" data-target="#game-engine-popup"> 
                     <center> 
-                        <img src="https://miro.medium.com/max/1024/1*Syzc_BbO0QHTx74NLHcpiQ.png" class="img-responsive" onclick="javaP2Clicked()""> 
+                        <img src="gameengine.PNG" class="img-responsive"> 
                         <div class="carousel-content"> 
-                            <p>Tic Tac Toe Game(incomplete)</p> 
+                            <p>Game Engine</p>
                         </div> 
                     </center> 
-                </div> 
-
-                <div class="item">
+                </div>
+                <div class="item col-lg-12 col-md-12 col-sm-12 col-xs-12" data-toggle="modal" data-target="#chat-app-popup">
                     <center> 
                         <img src="https://itsallbinary.com/wp-content/uploads/2019/12/Netty-Chat-Server-Client.jpg" class="img-responsive" onclick="javaP3Clicked()""> 
                         <div class="carousel-content"> 
@@ -94,27 +84,64 @@
                         </div> 
                     </center> 
                 </div> 
+
+                <div class="modal fade" id="game-engine-popup">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Game Engine</h4>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="gameengine.PNG" class="img-responsive img_modal"> 
+                                <p class="p_modal">
+                                    This was my first ever game engine i made using only java, it took 3 day of coding and testing to create it, currently there is no download link as the github account in which the code was saved got deleted. The download link will be given after i put it on google drive or github
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="chat-app-popup">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Chat App(almost complete)</h4>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="https://itsallbinary.com/wp-content/uploads/2019/12/Netty-Chat-Server-Client.jpg" class="img-responsive img_modal"> 
+                                <p class="p_modal">
+                                    This started as a learning project, but now it is a actuall project that im working on, the source code is not publickly available yet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a> 
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
+                    <span class="glyphicon glyphicon-chevron-right"></span> 
+                </a> 
             </div>
+        </div>
+    </section>
 
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a> 
-
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
-                <span class="glyphicon glyphicon-chevron-right"></span> 
-            </a> 
-        </section>
-
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
 
 
 	<div class="page-header" id="achievements">
   		<h2 class="text-capitalize">MY hobbies</h2>
   </div>
 
-<div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame" >
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame" >
     <span class="glyphicon glyphicon-heart" ></span> Coding<i class="fa fa-sort-desc" ></i>
   </div>
 
@@ -157,17 +184,19 @@
   	</div>
   </div>
 
-
-
-  
-
-
- 
-
-  
+  <section id="contact">
+    <div class="page-header" id="contact-txt">
+        <h2 class="text-capitalize">Contact</h2>
+    </div>
+    <img src="favicon.ico" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+    <h3 style="font-family: 'Pattaya', sans-serif;">Electronics Boy</h3>
+    <div class="contact_1" >
+        <a href="mailto:nikunjchiluvuri@gmail.com?Subject=Hi">
+            <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;nikunjchiluvuri@gmail.com</h5>
+        </a> 
+    </div>
+  </section>
 
   </div>
-
-
 <script async src="https://drv.tw/inc/wd.js"></script></body>
 </html>
