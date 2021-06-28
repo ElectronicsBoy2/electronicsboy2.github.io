@@ -1,0 +1,25 @@
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#display_name {
+    font-weight: bold;
+}
+
+#button_submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#button_sort {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.put_boader {
+    border-style:solid;
+    border-color:#000000;
+    border-width: 5px;
+}
