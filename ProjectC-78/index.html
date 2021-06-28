@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+
+        <script>
+            var imgs = [
+                "https://i.postimg.cc/MKdhy06Z/family.jpeg",
+                "https://i.postimg.cc/L6HcYQM0/grand-father.png",
+                "https://i.postimg.cc/5ymDKL83/bro.jpg",
+                "https://i.postimg.cc/JnL6wtrd/sister.jpg",
+                "https://i.postimg.cc/wjMnFtMX/father.jpg",
+                "https://i.postimg.cc/bw5W5zSK/mother.jpg"
+            ];
+            var names = [
+                "Family Book",
+                "Ranbir Singh",
+                "Rockey Singh",
+                "Alia Singh",
+                "Diljeet Singh",
+                "Soni Singh"
+            ];
+
+            var pic = 0;
+
+            function next() {
+                pic ++;
+
+                if(pic > 5) pic = 0;
+
+                document.getElementById("image").src = imgs[pic];
+                document.getElementById("name").innerHTML = names[pic];
+            }
+        </script>
+    </head>
+
+    <body>
+        <center>
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpeg" style="width: 400px; height: 500px;" id="image">
+            <h4 id="name">Family Book</h4>
+            <button onclick="next()">Next</button>
+        </center>
+    </body>
+</html>
